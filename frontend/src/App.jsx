@@ -4,10 +4,12 @@ import About from "./pages/About";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
+import Header from "./components/header/Header";
 
 export default function App() {
   return (
-    <div>
+    <>
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
@@ -15,6 +17,6 @@ export default function App() {
         <Route path="/sign-up" element={<Signup />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
-    </div>
+    </>
   );
 }
